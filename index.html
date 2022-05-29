@@ -5,40 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors!</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section class="scoreboard">
-      <img src="/images/logo.svg" alt="Rock Paper Scissors" />
-      <div class="score">
-        <p class="uppercase">Score</p>
-        <p id="score"></p>
-      </div>
-    </section>
+    <div class="container">
+      <section class="scoreboard">
+        <img src="/images/logo.svg" alt="Rock Paper Scissors" />
+        <div class="score">
+          <p class="uppercase">Score</p>
+          <p id="score"></p>
+        </div>
+      </section>
 
-    <section class="gameboard">
-      <div class="paper">
-        <img src="/images/Paper.png" alt="Hand as paper" />
-      </div>
-      <div class="scissors">
-        <img src="/images/Scissors.png" alt="Hand as scissors" />
-      </div>
-      <div class="rock">
-        <img src="/images/Rock.png" alt="Hand as rock" />
-      </div>
-    </section>
-    
-    <dialog class="modal" id="modal">
+      <section class="gameboard">
+        <div class="paper">
+          <img src="/images/Paper.png" alt="Hand as paper" />
+        </div>
+        <div class="scissors">
+          <img src="/images/Scissors.png" alt="Hand as scissors" />
+        </div>
+        <div class="rock">
+          <img src="/images/Rock.png" alt="Hand as rock" />
+        </div>
+      </section>
 
-    <p>
-      If the player wins, they gain 1 point. If the computer wins, the player
-      loses one point.
-    </p>
-    <ul>
-      <li>Paper beats Rock</li>
-      <li>Rock beats Scissors</li>
-      <li>Scissors beats Paper</li>
-    </ul>
-    <img src="/images/image-rules.svg" alt="Rock Paper Scissors diagram" />
+      <!-- Modal based on Kevin Powell's Modals Made Easy -->
+      <button class="button open-button">Rules</button>
+      <dialog class="modal" id="modal">
+        <p>
+          If the player wins, they gain 1 point. If the computer wins, the
+          player loses one point.
+        </p>
+        <ul>
+          <li>Paper beats Rock</li>
+          <li>Rock beats Scissors</li>
+          <li>Scissors beats Paper</li>
+        </ul>
+        <img src="/images/image-rules.svg" alt="Rock Paper Scissors diagram" />
+        <button class="button close-button">Close</button>
+      </dialog>
     </div>
+    <script src="modal.js"></script>
   </body>
 </html>

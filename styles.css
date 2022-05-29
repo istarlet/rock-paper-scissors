@@ -10,9 +10,54 @@
   list-style: none;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    #1f3757 0%,
+    #131537 100%
+  );
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.score {
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 20px;
+  width: 150px;
+  background-color: #000;
+}
+
+.gameboard {
+  display: flex;
+  flex-direction: row;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
 
+.button {
+  border: 0;
+  cursor: pointer;
+  background: var(--gray-8);
+  color: var(--gray-2);
+  font-weight: 700;
+  padding: var(--size-2) var(--size-4);
+}
 
-
+.button:hover,
+.button:focus {
+  background: var(--cyan-9);
+}
